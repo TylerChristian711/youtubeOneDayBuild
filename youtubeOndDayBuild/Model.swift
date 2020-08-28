@@ -13,7 +13,7 @@ class Model {
     func getVideoes() {
         // create URL object
         guard let url = URL(string: Constants.API_URL) else { return }
-    
+        
         // get a URLSession Object
         let session = URLSession.shared
         
@@ -25,6 +25,16 @@ class Model {
                 return
             }
             // parsing the data into video objects
+            
+            do {
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+                
+                let response = try decoder.decode(Response.self, from: data!)
+                dump(response)
+            } catch {
+                
+            }
             
         }
         
