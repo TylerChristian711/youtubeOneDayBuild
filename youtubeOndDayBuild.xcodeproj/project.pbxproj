@@ -17,6 +17,8 @@
 		E39BBC5D24F6E73500738B0F /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39BBC5C24F6E73500738B0F /* Video.swift */; };
 		E39BBC5F24F6E78A00738B0F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39BBC5E24F6E78A00738B0F /* Model.swift */; };
 		E39BBC6124F97BAD00738B0F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39BBC6024F97BAD00738B0F /* Response.swift */; };
+		E39BBC6324F9915100738B0F /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39BBC6224F9915100738B0F /* VideoTableViewCell.swift */; };
+		E39BBC6A24F99D1500738B0F /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39BBC6924F99D1500738B0F /* CacheManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		E39BBC5C24F6E73500738B0F /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		E39BBC5E24F6E78A00738B0F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		E39BBC6024F97BAD00738B0F /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		E39BBC6224F9915100738B0F /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		E39BBC6924F99D1500738B0F /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +68,61 @@
 		E39BBC4524F59DED00738B0F /* youtubeOndDayBuild */ = {
 			isa = PBXGroup;
 			children = (
+				E39BBC6824F9919500738B0F /* Helpers */,
+				E39BBC6724F9918D00738B0F /* StoryBoard */,
+				E39BBC6624F9918200738B0F /* Models */,
+				E39BBC6524F9917500738B0F /* Views */,
+				E39BBC6424F9916200738B0F /* ViewControllers */,
 				E39BBC4624F59DED00738B0F /* AppDelegate.swift */,
 				E39BBC4824F59DED00738B0F /* SceneDelegate.swift */,
-				E39BBC4A24F59DED00738B0F /* ViewController.swift */,
-				E39BBC4C24F59DED00738B0F /* Main.storyboard */,
 				E39BBC4F24F59DF000738B0F /* Assets.xcassets */,
-				E39BBC5124F59DF000738B0F /* LaunchScreen.storyboard */,
 				E39BBC5424F59DF000738B0F /* Info.plist */,
-				E39BBC5A24F6E4B200738B0F /* Constants.swift */,
-				E39BBC5C24F6E73500738B0F /* Video.swift */,
-				E39BBC5E24F6E78A00738B0F /* Model.swift */,
-				E39BBC6024F97BAD00738B0F /* Response.swift */,
 			);
 			path = youtubeOndDayBuild;
+			sourceTree = "<group>";
+		};
+		E39BBC6424F9916200738B0F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E39BBC4A24F59DED00738B0F /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E39BBC6524F9917500738B0F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E39BBC6224F9915100738B0F /* VideoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E39BBC6624F9918200738B0F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E39BBC5C24F6E73500738B0F /* Video.swift */,
+				E39BBC6024F97BAD00738B0F /* Response.swift */,
+				E39BBC5E24F6E78A00738B0F /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E39BBC6724F9918D00738B0F /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E39BBC4C24F59DED00738B0F /* Main.storyboard */,
+				E39BBC5124F59DF000738B0F /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		E39BBC6824F9919500738B0F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E39BBC5A24F6E4B200738B0F /* Constants.swift */,
+				E39BBC6924F99D1500738B0F /* CacheManager.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,10 +197,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E39BBC4B24F59DED00738B0F /* ViewController.swift in Sources */,
+				E39BBC6A24F99D1500738B0F /* CacheManager.swift in Sources */,
 				E39BBC4724F59DED00738B0F /* AppDelegate.swift in Sources */,
 				E39BBC4924F59DED00738B0F /* SceneDelegate.swift in Sources */,
 				E39BBC5F24F6E78A00738B0F /* Model.swift in Sources */,
 				E39BBC5B24F6E4B200738B0F /* Constants.swift in Sources */,
+				E39BBC6324F9915100738B0F /* VideoTableViewCell.swift in Sources */,
 				E39BBC5D24F6E73500738B0F /* Video.swift in Sources */,
 				E39BBC6124F97BAD00738B0F /* Response.swift in Sources */,
 			);
